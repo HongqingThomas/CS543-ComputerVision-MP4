@@ -8,7 +8,7 @@ import random
 def load_input():
     I1 = cv.imread('library1.jpg')
     I2 = cv.imread('library2.jpg')
-    matches = np.loadtxt('library_matches.txt')
+    lmatches = np.loadtxt('library_matches.txt')
 
     I3 = np.zeros((I1.shape[0], I1.shape[1] * 2, 3))
     I3[:, :I1.shape[1], :] = I1
